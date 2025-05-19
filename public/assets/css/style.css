@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+main {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+
+  /* background-color: red; */
+}
+#logo {
+  width: 80%;
+}
+.home-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  font-family: "UnifrakturMaguntia", "Playfair Display";
+  font-size: 2em;
+  gap: 1rem;
+}
+.home-links li {
+  text-align: center;
+
+  padding: 1rem;
+  border-radius: 2px;
+}
+.home-links li a:hover {
+  color: red;
+}
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}

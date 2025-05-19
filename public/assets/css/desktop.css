@@ -1,0 +1,16 @@
+@media screen and (min-width: 1024px) {
+  #logo {
+    width: 40%;
+  }
+  .home-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+
+    font-family: "UnifrakturMaguntia", "Playfair Display";
+    font-size: 2em;
+    gap: 1rem;
+  }
+}

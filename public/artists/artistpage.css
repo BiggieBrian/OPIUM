@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.montserrat {
+  font-family: "Montserrat";
+}
+nav {
+  height: 60vh;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.nav-overlay {
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5spx);
+}
+.brand {
+  bottom: 0;
+  height: 40vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: end;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+.name {
+  font-family: "UnifrakturMaguntia", "Playfair Display";
+  font-size: 4rem;
+  line-height: 1;
+}
+.mini-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.brand-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.menu-bar {
+  display: block;
+}
+.nav-logo {
+  width: 15rem;
+}
+.nav-links {
+  display: none;
+}
+.section {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5% 0rem;
+}
+.about-img {
+  width: 60%;
+  border-radius: 10px;
+}
+.section-head {
+  font-family: "UnifrakturMaguntia", "Playfair Display";
+  font-size: 10vw;
+
+  text-align: center;
+  background-color: darkred;
+}
+.album-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.album {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.album-art {
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.album-name {
+  font-size: 2rem;
+  font-family: "Playfair Display";
+  padding: 1rem 0rem;
+}
+a {
+  transition: 250ms !important;
+}
+
+a:hover {
+  transform: translateY(-10px) !important;
+}
+#about {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.full-overlay {
+  min-height: inherit;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+.card p {
+  padding: 1rem;
+}
+#mac-buttons div {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.card-head {
+  padding: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-family: "Montserrat", "Playfair Display";
+  font-weight: 700;
+}
