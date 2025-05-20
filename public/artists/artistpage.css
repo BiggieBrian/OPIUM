@@ -73,10 +73,28 @@ video {
 }
 .section-head {
   font-family: "UnifrakturMaguntia", "Playfair Display";
-  font-size: 10vw;
 
   text-align: center;
-  background-color: darkred;
+}
+.head-wrapper {
+  width: 100%;
+
+  overflow: hidden;
+}
+.section-head {
+  white-space: nowrap;
+
+  animation: slideleft 10s linear infinite;
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }
 .album-wrapper {
   width: 100%;

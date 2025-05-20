@@ -21,7 +21,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -175,6 +174,12 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
@@ -205,9 +210,6 @@
   .flex-row-reverse {
     flex-direction: row-reverse;
   }
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
   .items-center {
     align-items: center;
   }
@@ -229,6 +231,15 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
+  }
+  .gap-32 {
+    gap: calc(var(--spacing) * 32);
+  }
+  .gap-96 {
+    gap: calc(var(--spacing) * 96);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -248,17 +259,11 @@
   .bg-\[url\(\.\.\/\.\.\/artists\/carti\/media\/carti\.webp\)\] {
     background-image: url(../../artists/carti/media/carti.webp);
   }
-  .bg-\[url\(\.\.\/\.\.\/artists\/carti\/media\/ken\.jpg\)\] {
-    background-image: url(../../artists/carti/media/ken.jpg);
-  }
   .bg-\[url\(\.\.\/\.\.\/artists\/ken\/media\/ken\.jpg\)\] {
     background-image: url(../../artists/ken/media/ken.jpg);
   }
   .bg-\[url\(\.\.\/\.\.\/artists\/lone\/media\/lone\.jpeg\)\] {
     background-image: url(../../artists/lone/media/lone.jpeg);
-  }
-  .bg-\[url\(\.\/media\/carti\.webp\)\] {
-    background-image: url(./media/carti.webp);
   }
   .text-center {
     text-align: center;
@@ -333,16 +338,6 @@
       @media (hover: hover) {
         color: var(--color-red-600);
       }
-    }
-  }
-  .md\:flex-row {
-    @media (width >= 48rem) {
-      flex-direction: row;
-    }
-  }
-  .md\:justify-between {
-    @media (width >= 48rem) {
-      justify-content: space-between;
     }
   }
   .lg\:flex-row {
